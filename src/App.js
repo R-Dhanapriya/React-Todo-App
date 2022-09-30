@@ -35,6 +35,9 @@ function App() {
         <Route path="/todo/update/:id" exact>
           <TodoForm />
         </Route>
+        <Route path="*" exact>
+          <List />
+        </Route>
       </Switch>
     </React.StrictMode>
   );
