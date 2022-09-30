@@ -72,6 +72,7 @@ const TodoForm = () => {
   };
 
   const handleSelectChange = (value) => {
+    console.log({ ...todo, completed: value });
     setTodo({ ...todo, completed: value });
   };
 
@@ -130,10 +131,10 @@ const TodoForm = () => {
           {param.id && (
             <div className="form-group mt-3 col-md-10 text-align">
               <label className="mt-1 mb-2" htmlFor="title">
-                Completed :{" "}
+                Completed :
               </label>
               <Select
-                defaultValue={todo?.completed}
+                value={todo?.completed}
                 className="select-container"
                 onChange={handleSelectChange}
               >

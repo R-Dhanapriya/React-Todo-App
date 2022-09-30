@@ -10,7 +10,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/React-Todo-App">
     <Provider store={store}>
       <App />
     </Provider>
